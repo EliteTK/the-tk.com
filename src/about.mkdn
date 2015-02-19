@@ -1,3 +1,4 @@
+<!--TITLE"the-tk.com - About"-->
 About
 =====
 
@@ -9,17 +10,17 @@ development.
 
 This "Website"
 --------------
-It's written in markdown, and put together from three parts with cat in a
-single makefile. It's a really silly mess, one of the first things I write
-about on here might be how It's all put together. But for that, I'll have to
-add css for the pre tag which would be another whole load of pain.
+This "Website" is now availible for laughing at, at
+[https://github.com/EliteTK/the-tk.com](https://github.com/EliteTK/the-tk.com).
+I might do a writeup of the code on here soon once I figure out how to organize
+project pages.
 
 CSS
 ---
-Right now the CSS for this website is [CC 4.0
-BY-SA](http://creativecommons.org/licenses/by-sa/4.0/ "CC
-Attribution-ShareAlike 4.0"), this means you can take it and do whatever you
-want with it as long as you make sure to keep the license the same.
+Right now the CSS for this website is
+[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/ "CC Attribution-ShareAlike 4.0"),
+this means you can take it and do whatever you want with it as long as
+you make sure to keep the license the same.
 
 IP Echo Server
 --------------

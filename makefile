@@ -20,7 +20,7 @@ $(STRUCTURE): $(OUTPUTS)
 	cp $(PAGES) $(output)
 
 %.html: %.pre
-	sed -e "s&<!--TITLE-->&$$(sed -n -e 's@<h1>\(.*\)</h1>@\1@p' $^)&" $^ >$@
+	sed -e "s&<!--TITLE-->&$$(sed -n -e 's@<!--TITLE\"\(.*\)\"-->@\1@p' $^)&" $^ >$@
 
 %.pre: header.part %.mid.part footer.part
 	cat $^ >$@
