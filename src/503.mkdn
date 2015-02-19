@@ -1,0 +1,8 @@
+Error
+=====
+
+Error: 503 - Service Unavailable
+--------------------------------
+
+We tried to check wikipedia for information on what this means, but their
+service was also unavailable.

@@ -1,0 +1,7 @@
+Error
+=====
+
+500 - Internal Server Error
+---------------------------
+
+Your internal server looks very erroneous.

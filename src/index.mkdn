@@ -1,0 +1,10 @@
+Home
+====
+
+This website is a work in progress, so far only the style can be considered
+finalized.
+
+If you want something interesting to look at you can go
+[here](https://github.com/EliteTK/ "Github Page").
+
+No mail user accounts are being given out now or any time soon.

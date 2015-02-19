@@ -1,0 +1,32 @@
+About
+=====
+
+I write a lot of C and a bit of lua, visit my
+[github](https://github.com/EliteTK/ "Github Page") to look at it all.
+
+This website is currently a small side project, I don't normally do web
+development.
+
+This "Website"
+--------------
+It's written in markdown, and put together from three parts with cat in a
+single makefile. It's a really silly mess, one of the first things I write
+about on here might be how It's all put together. But for that, I'll have to
+add css for the pre tag which would be another whole load of pain.
+
+CSS
+---
+Right now the CSS for this website is [CC 4.0
+BY-SA](http://creativecommons.org/licenses/by-sa/4.0/ "CC
+Attribution-ShareAlike 4.0"), this means you can take it and do whatever you
+want with it as long as you make sure to keep the license the same.
+
+IP Echo Server
+--------------
+I host an "IP Echo Server" or a "what is my IP" server on
+[ip.the-tk.com](http://ip.the-tk.com/).  Feel free to use it, but I can't
+guarantee it will be up forever. It's written in C, contact me for the source.
+In the future the source might appear on here under some heading.
+
+It returns your IP in text/plain encoding, hopefully with no extra nonsense and
+hopefully with no newline.

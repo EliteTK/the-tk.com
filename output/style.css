@@ -1,0 +1,122 @@
+/*
+ * This stylesheet is licensed under a Creative Commons Attribution-ShareAlike
+ * 4.0 International License.
+ *
+ * http://creativecommons.org/licenses/by-sa/4.0/
+ */
+
+html {
+	background-color: #000000;
+	color: #9E9E9E;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#wrap {
+	background-color: #101010;
+	min-height: 100%;
+}
+
+#main {
+	overflow: auto;
+}
+
+#navbar {
+	background-color: #202020;
+	border-bottom: 0.2em solid #000000;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#navbar li {
+	float: left;
+}
+
+#navbar li a {
+	border-right: 0.2em solid #000000;
+	display: block;
+	font-weight: bold;
+	padding: 0.8em 1.6em;
+	text-decoration: none;
+}
+
+body {
+	height: 100%;
+	margin: auto;
+	width: 70%;
+}
+
+#content {
+	padding: 2em;
+}
+
+#footer {
+	clear: both;
+	height: 2em;
+	margin-top: -2.2em;
+	position: relative;
+}
+
+#footer ul {
+	background-color: #202020;
+	border-top: 0.2em solid #000000;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#footer ul li {
+	float: left;
+}
+
+#footer ul li p {
+	border-right: 0.2em solid #000000;
+	display: block;
+	height: 1.2em;
+	margin: 0;
+	padding: 0.4em 0.8em;
+	text-decoration: none;
+}
+
+h1 {
+	color: #BEBEBE;
+	width: 100%;
+	border-bottom: 0.1em solid #000000;
+}
+
+h2 {
+	color: #B9B9B9;
+}
+
+h3 {
+	color: #B1B1B1;
+}
+
+h4 {
+	color: #AAAAAA;
+}
+
+a:link {
+	color: #FFFFFF;
+}
+
+a:hover {
+	color: #BBBBBB;
+}
+
+a:active {
+	color: #FFFFFF;
+}
+
+a:visited {
+	color: #555555;
+}

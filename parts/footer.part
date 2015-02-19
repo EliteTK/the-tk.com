@@ -1,0 +1,15 @@
+<!-- Begin Footer -->
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <ul>
+                <li><p>Contact: <a href="mailto:website-inquiries@the-tk.com">website-inquiries@the-tk.com</a></p></li>
+                <li><p>Github: <a href="https://github.com/EliteTK/">https://github.com/EliteTK/</a></p></li>
+            </ul>
+        </div>
+    </body>
+</html>
+
+<!-- vim: set et ts=4 sw=4 ft=html: -->

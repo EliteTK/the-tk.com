@@ -1,0 +1,8 @@
+Error
+=====
+
+502 - Bad Gateway
+-----------------
+
+You tried to pass through the gates of heaven but you were in fact destined for
+the gates of hell.
