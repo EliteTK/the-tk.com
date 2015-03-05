@@ -11,9 +11,8 @@ development.
 This "Website"
 --------------
 This "Website" is now availible for laughing at, at
-[https://github.com/EliteTK/the-tk.com](https://github.com/EliteTK/the-tk.com).
-I might do a writeup of the code on here soon once I figure out how to organize
-project pages.
+<https://github.com/EliteTK/the-tk.com>.  I might do a writeup of the code on
+here soon once I figure out how to organize project pages.
 
 CSS
 ---
@@ -31,3 +30,13 @@ In the future the source might appear on here under some heading.
 
 It returns your IP in text/plain encoding, hopefully with no extra nonsense and
 hopefully with no newline.
+
+Pictures
+--------
+If you don't like text, here are some pictures to look at:
+
+![EFF Member](https://www.eff.org/files/2014/11/17/eff-badge-rec-2015.png)
+
+![Hacker Emblem](http://www.catb.org/hacker-emblem/glider.png)
+
+![GNU](http://static.fsf.org/fsforg/graphics/gnu-head-sm.jpg)
