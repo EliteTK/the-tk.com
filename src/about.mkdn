@@ -37,6 +37,6 @@ If you don't like text, here are some pictures to look at:
 
 ![EFF Member](https://www.eff.org/files/2014/11/17/eff-badge-rec-2015.png)
 
-![Hacker Emblem](http://www.catb.org/hacker-emblem/glider.png)
+![Hacker Emblem](/glider.png)
 
-![GNU](http://static.fsf.org/fsforg/graphics/gnu-head-sm.jpg)
+![GNU](https://static.fsf.org/fsforg/graphics/gnu-head-sm.jpg)
