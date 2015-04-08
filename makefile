@@ -4,9 +4,10 @@ VPATH = parts:src
 output = ./output
 errors = $(output)/error
 
-PAGES = index.html about.html
+PAGES = index.html about.html projects.html
 ERRORS = 404 500 502 503 504
 ERRORS := $(addsuffix .html,$(ERRORS))
+EXISTING = glider.png style.css
 OUTPUTS = $(PAGES) $(ERRORS)
 STRUCTURE = $(addprefix $(errors)/,$(ERRORS)) $(addprefix $(output)/,$(PAGES))
 
@@ -31,7 +32,7 @@ $(STRUCTURE): $(OUTPUTS)
 .PHONY: tarball
 tarball: $(TARBALL)
 
-$(TARBALL): $(STRUCTURE)
+$(TARBALL): $(STRUCTURE) $(addprefix $(output)/,$(EXISTING))
 	tar -cvaf $@ $^
 
 .PHONY: clean
