@@ -87,6 +87,11 @@ body {
 	text-decoration: none;
 }
 
+#footer ul li img {
+	height: 1.2em;
+	width: auto;
+}
+
 h1 {
 	color: #BEBEBE;
 	width: 100%;

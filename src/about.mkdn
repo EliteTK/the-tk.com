@@ -33,10 +33,4 @@ hopefully with no newline.
 
 Pictures
 --------
-If you don't like text, here are some pictures to look at:
-
-![EFF Member](https://www.eff.org/files/2014/11/17/eff-badge-rec-2015.png)
-
-![Hacker Emblem](/glider.png)
-
-![GNU](https://static.fsf.org/fsforg/graphics/gnu-head-sm.jpg)
+I moved all the pictures which were previously in this section to the footer. I ended up re-making every one of them in gimp, there's also a favicon. Feel free to do whatever with all the pictures.

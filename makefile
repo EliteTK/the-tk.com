@@ -7,7 +7,7 @@ errors = $(output)/error
 PAGES = index.html about.html projects.html
 ERRORS = 404 500 502 503 504
 ERRORS := $(addsuffix .html,$(ERRORS))
-EXISTING = glider.png style.css
+EXISTING = glider-yellow.png EFF.png GNU.png favicon.png style.css
 OUTPUTS = $(PAGES) $(ERRORS)
 STRUCTURE = $(addprefix $(errors)/,$(ERRORS)) $(addprefix $(output)/,$(PAGES))
 
