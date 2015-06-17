@@ -7,9 +7,9 @@
             <ul>
                 <li><p>Contact: <a href="mailto:website-inquiries@the-tk.com">website-inquiries@the-tk.com</a></p></li>
                 <li><p>Github: <a href="https://github.com/EliteTK/">https://github.com/EliteTK/</a></p></li>
-                <li><p><img src="/glider-yellow.png" alt="Hacker Emblem" /></p></li>
-                <li><p><img src="/EFF.png" alt="EFF Logo" /></p></li>
-                <li><p><img src="/GNU.png" alt="FSF GNU" /></p></li>
+                <li><p><a href="http://www.catb.org/hacker-emblem/"><img src="/images/glider-yellow.png" title="Hacker Emblem" alt="Hacker Emblem" /></a></p></li>
+                <li><p><a href="https://www.eff.org/"><img src="/images/EFF.png" title="EFF" alt="EFF Logo" /></a></p></li>
+                <li><p><a href="https://www.gnu.org/"><img src="/images/GNU.png" title="GNU" alt="FSF GNU" /></a></p></li>
             </ul>
         </div>
     </body>

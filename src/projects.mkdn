@@ -1,8 +1,9 @@
 <!--TITLE"the-tk.com - Projects"-->
+
 Projects
 ========
 Here is a list of notable projects, information about each can be found in the
-README.md located in the root directory of each project on gihtub.
+README.md located in the root directory of each project on github.
 
 
  - __[c-stuff](https://github.com/EliteTK/c-stuff/ "EliteTK/c-stuff · GitHub")__ -
@@ -14,6 +15,27 @@ README.md located in the root directory of each project on gihtub.
  - __[the-tk.com](https://github.com/EliteTK/the-tk.com/ "EliteTK/the-tk.com · GitHub")__ -
    This is the source of this website, it is a giant hack, I am hoping to
    improve the entire idea because right now it is a rather cumbersome thing.
+    - __IP Echo Server__ - This simple fastcgi ip echo thing written in C.
+
+      ```c
+      #include <fcgi_stdio.h>
+      #include <stdio.h>
+      #include <stdlib.h>
+
+      int main(void)
+      {
+          while (FCGI_Accept() >= 0) {
+              printf("Content-type: text/plain; charset=UTF-8\n");
+              printf("Status: 200 OK\n");
+              printf("\n");
+              printf("%s", getenv("REMOTE_ADDR"));
+          }
+
+          return EXIT_SUCCESS;
+      }
+      ```
+      It attempts to quickly return a clean output, no decoration, text/plain
+      and not even a new line.
 
 
  - __[vav](https://github.com/EliteTK/vav/ "EliteTK/vav · GitHub")__ -
@@ -23,13 +45,13 @@ README.md located in the root directory of each project on gihtub.
    be a source of interesting ideas.
 
 
- - __[minecurses](https://github.com/EliteTK/minecurses/ "EliteTK/minecurses · GitHub")__
+ - __[minecurses](https://github.com/EliteTK/minecurses/ "EliteTK/minecurses · GitHub")__ -
    This is a clone of minesweeper written in C using ncurses. The code is quite
    awful in the current master branch and the redo branch is not in any way
    able to be compiled. However, in the future this might possibly improve. A
    -git package can be found in the Arch Linux AUR.
 
 
- - __[dotfiles](http://github.com/EliteTK/dotfiles/ "EliteTK/dotfiles · GitHub")__
+ - __[dotfiles](http://github.com/EliteTK/dotfiles/ "EliteTK/dotfiles · GitHub")__ -
    These are the files from my .config directory, the only things which are
    actually useful may be the vimrc, i3 config and i3blocks config.

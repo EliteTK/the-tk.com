@@ -2,8 +2,12 @@
 <html>
     <head>
     <title><!--TITLE--></title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="favicon.png">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/png" href="./images/TK-32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="./images/TK-64.png" sizes="64x64">
+        <link rel="icon" type="image/png" href="./images/TK-128.png" sizes="128x128">
+        <link rel="icon" type="image/png" href="./images/TK-256.png" sizes="256x256">
+        <link rel="icon" type="image/png" href="./images/TK.png" sizes="1080x1080">
     </head>
 
     <body>
@@ -13,6 +17,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
+                    <img src="/images/TK.png" />
                 </ul>
 
                 <div id="content">

@@ -1,36 +1,30 @@
 <!--TITLE"the-tk.com - About"-->
+
 About
 =====
 
-I write a lot of C and a bit of lua, visit my
-[github](https://github.com/EliteTK/ "Github Page") to look at it all.
+I write a lot of C and a bit of python, visit my
+[github](https://github.com/EliteTK/ "Github Page") to look at it all. You can
+also find the source of this website there at
+<https://github.com/EliteTK/the-tk.com>.
 
 This website is currently a small side project, I don't normally do web
 development.
 
-This "Website"
---------------
-This "Website" is now availible for laughing at, at
-<https://github.com/EliteTK/the-tk.com>.  I might do a writeup of the code on
-here soon once I figure out how to organize project pages.
-
 CSS
 ---
 Right now the CSS for this website is
-[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/ "CC Attribution-ShareAlike 4.0"),
-this means you can take it and do whatever you want with it as long as
-you make sure to keep the license the same.
+[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/ "CC Attribution-ShareAlike 4.0"). It's not the best out there but it works.
 
 IP Echo Server
 --------------
 I host an "IP Echo Server" or a "what is my IP" server on
 [ip.the-tk.com](http://ip.the-tk.com/).  Feel free to use it, but I can't
-guarantee it will be up forever. It's written in C, contact me for the source.
-In the future the source might appear on here under some heading.
-
-It returns your IP in text/plain encoding, hopefully with no extra nonsense and
-hopefully with no newline.
+guarantee it will be up forever. Both the source and more information is
+available on the projects page.
 
 Pictures
 --------
-I moved all the pictures which were previously in this section to the footer. I ended up re-making every one of them in gimp, there's also a favicon. Feel free to do whatever with all the pictures.
+I moved all the pictures which were previously in this section to the footer. I
+ended up re-making every one of them in gimp, there's now also an icon. Feel
+free to do whatever you want with all the pictures.
