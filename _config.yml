@@ -1,0 +1,25 @@
+# Site settings
+title: the-tk.com
+author: Tomasz Kramkowski <tk@the-tk.com>
+description: >
+  This is my corner of the internet, it's a bit damp, there's some mould
+  growing under the floor but it's what I call home. Hopefully something I say
+  might be useful to someone, but that's unlikely. Here you will find a listing
+  of my projects, some contact information and a blog.
+baseurl: ""
+url: "https://the-tk.com/"
+
+# Build settings
+markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      navbar: true
+  -
+    scope:
+      path: "error"
+    values:
+      navbar: false

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<h1>Welcome</h1>
+<p>Welcome, this website is a work in progress.</p>
+
+<p>For now, it will do.</p>
+
+<p>You will probably find my <a href="https://github.com/EliteTK/">github</a>
+more interesting.</p>
+
+<h2>Recent blogposts:</h2>
+<ul class="postlist">{% for post in site.posts limit: 3 %}
+  <li>
+    <article>
+      <header>
+        <h1>{{ post.title }}</h1>
+      </header>
+      {{ post.excerpt|strip_html }} <a href="{{ post.url|prepend: site.baseurl }}">Read more...</a>
+      <footer>
+        <time>{{ post.date|date: "%Y-%m-%d" }}</time>
+      </footer>
+    </article>
+  </li>
+{% endfor %}</ul>

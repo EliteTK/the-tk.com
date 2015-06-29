@@ -1,0 +1,19 @@
+---
+layout: default
+title: Blog
+---
+<h1>Information</h1>
+<ul class="postlist">{% for post in site.categories.info %}
+  <li><time>{{ post.date|date: "%Y-%m-%d" }}</time> | <a href="{{ post.url|prepend: site.baseurl }}">{{ post.title }}</a></li>
+{% endfor %}</ul>
+{% if site.categories.info == null %}
+<p>There is nothing in this category yet.</p>
+{% endif %}
+
+<h1>Rants</h1>
+<ul class="postlist">{% for post in site.categories.rants %}
+  <li><time>{{ post.date|date: "%Y-%m-%d" }}</time> | <a href="{{ post.url|prepend: site.baseurl }}">{{ post.title }}</a></li>
+{% endfor %}</ul>
+{% if site.categories.rants == null %}
+<p>There is nothing in this category yet.</p>
+{% endif %}

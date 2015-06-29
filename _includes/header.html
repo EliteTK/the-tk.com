@@ -1,0 +1,9 @@
+<header>
+      <nav id="navbar">
+        <span><a href="{{ site.baseurl }}/">{{ site.title }}</a></span>
+        <ul>{% for page in site.pages %}{% if page.title and page.navbar %}
+          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %}{% endfor %}</ul>
+      </nav>
+      <hr />
+    </header>
