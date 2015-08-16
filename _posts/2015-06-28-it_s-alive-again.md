@@ -1,7 +1,7 @@
 ---
-layout:     post
-title:      "It's alive... again..."
-date:       2015-06-28 17:00:00
+layout:   post
+title:    "It's alive... again..."
+date:     2015-06-28 17:00:00
 category: rants
 ---
 After putting it off for a few months, and a weekend of trying to make the
