@@ -12,6 +12,8 @@ url: "https://the-tk.com/"
 # Build settings
 markdown: kramdown
 
+exclude: ["mksite.sh", "site.tgz"]
+
 defaults:
   -
     scope:
