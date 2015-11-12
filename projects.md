@@ -14,6 +14,7 @@ which some might find useful. Most of the code is licensed under the GPLv3.
 This is a simple command line beeping countdown timer. Despite its simplicity,
 it's very useful. It can be found in the [aur][timer-aur]. I am considering
 splitting this up into its own repository.
+![timer example](/images/projects/timer.png "timer example - Usage: timer <n>{s,m,h,D,M,Y}")
 
 ## [the-tk.com][the-tk]
 Here you can find the source for both the old website and the new website. The
