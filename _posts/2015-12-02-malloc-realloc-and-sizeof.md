@@ -20,12 +20,7 @@ bar = (struct foo *)realloc(bar, sizeof (struct foo) * 20);
 There are multiple issues with this:
 
  - Casting malloc can hide newbie mistakes such as forgetting to include
-   \<stdlib.h\> which can in turn cause strange issues down the line. (Without
-   the necessary warnings, the compiler will likely assume, through implicit
-   function declaration [note: this was removed in C99 but compilers still like
-   to do this for backwards compatibility while giving warnings], that malloc
-   is defined as so: `int malloc(<whatever>)` which can obviously cause
-   problems.)
+   \<stdlib.h\> which can in turn cause strange issues down the line.
  - Casting unnecessarily also gives you rather long lines, especially when you
    have a rather complicated/long type (e.g. const struct foo * const *).
  - You're having to type the same thing three times, when you could type it
@@ -60,17 +55,19 @@ This solves all of the outlined problems.
 
 Here's the answers to two common questions:
 
-**Q**: _I've been told that I have to cast pointers to convert them to other
-pointers, why is a cast not needed here?_
+**Q**: _The compiler has always complained (warned) when I tried to assign a
+pointer to one type to a pointer to another type. Would this not be the case
+here?_
 
 **A**: The C standard states (C11/C99 §6.3.2.3 and C11/C99 §6.5.16.1) roughly
-that a pointer to void can be converted to a pointer to any type and back again
-and the result shall compare equal to the original pointer.  This means that
-the return value of malloc (and any other function returning void \*) will be
-converted without warning without needing a cast.
+that a pointer to void can be assigned to a pointer to any type, and vice
+versa, freely without issuing a warning. This in turn means that the return
+value of malloc (and any other function returning void \*) will be converted
+without warning to the desired type without needing a cast.
 
 **Q**: _What's the deal with `sizeof *bar`? Also, doesn't the sizeof function
 need brackets?_
+
 
 **A**: The sizeof operator can be given, as an operand, an expressions as well
 as the parenthesized name of a type. This means we can do `sizeof *bar`. Also,
