@@ -13,9 +13,9 @@ such code is incorrect.
 
 The code I'm describing is usually a combination of some or all of this:
 {% highlight c %}
-struct foo *bar = (struct foo *)malloc(sizeof (struct foo) * 10);
+struct foo *bar = (struct foo *)malloc(sizeof(struct foo) * 10);
 
-bar = (struct foo *)realloc(bar, sizeof (struct foo) * 20);
+bar = (struct foo *)realloc(bar, sizeof(struct foo) * 20);
 {% endhighlight %}
 There are multiple issues with this:
 
