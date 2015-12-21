@@ -75,4 +75,6 @@ since sizeof is an _operator_ and **not** a function, it doesn't require
 parentheses when its operand is an expression, the C standard does however
 require that for types, the type name has to be parenthesized.  In the end,
 it's a style choice whether the parentheses are always there or not, but
-personally I think leaving them out is more consistent.
+personally I think leaving them out is more consistent. (NB: The first example
+uses sizeof as such: `sizeof(type)`, personally I prefer leaving a space
+between `sizeof` and `(type)` as I would with most other operators.)
