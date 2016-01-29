@@ -10,12 +10,14 @@ html {
 }
 
 #main {
-	max-width: calc(100% - 4em);
+	max-width: 100%;
 	width: 50em;
 	margin: 1em auto;
 	padding: 1em;
 	background-color: white;
 	box-shadow: 0 0 5px #888;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 #copyright {
