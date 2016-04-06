@@ -1,0 +1,20 @@
+---
+layout: null
+sitemap:
+  exclude: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	{% for post in site.posts %}<url>
+		<loc>{{ post.url | prepend: site.url }}</loc>
+		{% if post.sitemap.lastmod %}<lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>{% elsif post.date %}<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>{% else %}<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>{% endif %}
+		{% if post.sitemap.changefreq %}<changefreq>{{ post.sitemap.changefreq }}</changefreq>{% elsif site.sitemap.post.changefreq %}<changefreq>{{ site.sitemap.post.changefreq }}</changefreq>{% endif %}
+		{% if post.sitemap.priority %}<priority>{{ post.sitemap.priority }}</priority>{% elsif site.sitemap.post.priority %}<priority>{{ site.sitemap.post.priority }}</priority>{% endif %}
+	</url>{% endfor %}
+	{% for page in site.pages %}{% unless page.sitemap.exclude %}<url>
+		<loc>{{ page.url | remove: "index.html" | prepend: site.url }}</loc>
+		{% if page.sitemap.lastmod %}<lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>{% elsif page.date %}<lastmod>{{ page.date | date_to_xmlschema }}</lastmod>{% else %}<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>{% endif %}
+		{% if page.sitemap.changefreq %}<changefreq>{{ page.sitemap.changefreq }}</changefreq>{% elsif site.sitemap.other.changefreq %}<changefreq>{{ site.sitemap.other.changefreq }}</changefreq>{% endif %}
+		{% if page.sitemap.priority %}<priority>{{ page.sitemap.priority }}</priority>{% elsif site.sitemap.other.priority %}<priority>{{ site.sitemap.other.priority }}</priority>{% endif %}
+	</url>{% endunless %}{% endfor %}
+</urlset>
