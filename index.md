@@ -1,15 +1,12 @@
 ---
 layout: default
 ---
-<h1>Welcome</h1>
-<p>Welcome, this website is a work in progress.</p>
+# Welcome
 
-<p>For now, it will do.</p>
+Welcome, this is my experiment, I no longer consider it a work in progress but I
+still think that my [GitHub][github] would probably be more interesting.
 
-<p>You will probably find my <a href="https://github.com/EliteTK/">github</a>
-more interesting.</p>
-
-<h2>Recent blogposts:</h2>
+## Recent blogposts:
 <ul class="postlist">{% for post in site.posts limit: 3 %}
   <li>
     <article>
@@ -23,3 +20,5 @@ more interesting.</p>
     </article>
   </li>
 {% endfor %}</ul>
+
+[github]: https://github.com/EliteTK/ "EliteTK (Tomasz Kramkowski)"
