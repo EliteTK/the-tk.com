@@ -60,7 +60,7 @@ considered, however, this only took about an hour.
 
 Now, bask in the glory of the syntax highlighting:
 
-{% highlight c %}
+~~~
 #include <stdio.h>
 
 int main(void)
@@ -69,7 +69,8 @@ int main(void)
 
 	return 0;
 }
-{% endhighlight %}
+~~~
+{: .language-c}
 
 [jekyll]: http://jekyllrb.com
 [jinja]:  http://jinja.pocoo.org/
