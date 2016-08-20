@@ -12,15 +12,19 @@ write it once and simply give people a link every time I wish to explain why
 such code is incorrect.
 
 The code I'm describing is usually a combination of some or all of this:
-{% highlight c %}
-struct foo *bar = (struct foo *)malloc(sizeof(struct foo) * 10);
+
+~~~ c
+struct foo *bar;
+
+bar = (struct foo *)malloc(sizeof(struct foo) * 10);
 
 bar = (struct foo *)realloc(bar, sizeof(struct foo) * 20);
-{% endhighlight %}
+~~~
+
 There are multiple issues with this:
 
  - Casting malloc can hide newbie mistakes such as forgetting to include
-   \<stdlib.h\> which can in turn cause strange issues down the line.
+   stdlib.h which can in turn cause strange issues down the line.
  - Casting unnecessarily also gives you rather long lines, especially when you
    have a rather complicated/long type (e.g. const struct foo * const *).
  - You're having to type the same thing three times, when you could type it
@@ -37,10 +41,13 @@ There are multiple issues with this:
    automatically free the original pointer when it can't realloc.
 
 The easy solution is simply:
-{% highlight c %}
-struct foo *bar = malloc(sizeof *bar * 10), *tmpbar;
 
-tmpbar = realloc(bar, sizeof *bar * 20); /* or sizeof *tmpbar */
+~~~ c
+struct foo *bar, *tmpbar;
+
+bar = malloc(sizeof *bar * 10);
+
+tmpbar = realloc(bar, sizeof *tmpbar * 20);
 
 if (!tmpbar) {
 	free(bar);
@@ -48,7 +55,8 @@ if (!tmpbar) {
 } else {
 	bar = tmpbar;
 }
-{% endhighlight %}
+~~~
+
 This solves all of the outlined problems.
 
 -----------------------
@@ -65,8 +73,8 @@ versa, freely without issuing a warning. This in turn means that the return
 value of malloc (and any other function returning void \*) will be converted
 without warning to the desired type without needing a cast.
 
-**Q**: _What's the deal with `sizeof *bar`? Also, doesn't the sizeof function
-need brackets?_
+**Q**: _What's the deal with `sizeof *bar`? Don't functions need
+brackets?_
 
 
 **A**: The sizeof operator can be given, as an operand, an expressions as well
