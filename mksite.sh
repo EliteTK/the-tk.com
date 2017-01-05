@@ -1,5 +1,6 @@
 #!/bin/sh
 
-~/.gem/ruby/2.2.0/bin/jekyll build
-tar -caf site.tgz _site
+jekyll build
+tar -caf site.tgz -C _site .
 scp site.tgz erebus.the-tk.com:
+ssh -t erebus.the-tk.com webtools/updateweb.sh
