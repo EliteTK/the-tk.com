@@ -1,5 +1,5 @@
 <header>
-      <nav id="navbar">
+      <nav>
         <a href="{{ site.baseurl }}/">{{ site.title }}</a>{% for page in site.pages %}{% if page.title and page.navbar %} | <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}{% endfor %}
       </nav>
       <hr />
