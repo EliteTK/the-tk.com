@@ -32,9 +32,11 @@ main {
 
 nav {
 	overflow: hidden; width: 100%; font-weight: bold; font-size: large;
+	a { text-decoration: none; }
+	a:link { color: black; }
 	a:visited { color: black; }
 	a:hover { color: grey; }
-	a { text-decoration: none; color: black; }
+	a:active { color: darkgrey; }
 }
 
 code {
